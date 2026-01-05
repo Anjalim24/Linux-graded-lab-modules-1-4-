@@ -1,0 +1,14 @@
+Question 3
+You have been asked to understand how Linux manages files using links and disk usage information. As part of your role, you will perform the following operations within your own user space.
+1.	File Creation: Create a file named sample_data.txt in your home directory and add some sample text to it.
+Answer 1: To create a new file in the home directory and add text, I used the touch command followed by echo and output redirection (>). I also used the cat command to check if the text has been successfully included in the file.
+Command: touch sample_data.txt & echo "Once upon a time, the planets and the fates and all the stars aligned." > sample_data.txt
+ 
+2.	Hard Link Creation: Create a hard link to sample_data.txt named sample_hard.txt.
+Answer 2: A hard link is a direct reference to the same data (inode) on the disk as the original file. I used the ln command to create the hard link.
+Command: ln sample_data.txt sample_hard.txt
+ 
+3.	Symbolic Link Creation: Create a symbolic (soft) link to sample_data.txt named sample_soft.txt.
+Answer 3: A symbolic (soft) link is a special file that acts as a shortcut by containing the path to the target file. To create a soft link, I used the command ln with the -s option.
+Command: ln -s sample_data.txt sample_soft.txt
+ 
