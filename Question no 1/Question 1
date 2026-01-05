@@ -1,0 +1,27 @@
+1) You have just joined IxD Systems as a junior systems engineer. On your first day, the Linux administrator asks you to perform a basic environment verification on the lab machine using your own login account.
+User Identity Verification: Display your currently logged-in username and all groups your user account belongs to. Your name or login ID must appear in the output.
+Answer 1: I used the command whoami to display my current logged-in username. To see all groups that my user account belongs to, along with my unique user ID (UID), I used the id command.
+Command: whoami and id
+
+
+ 
+I used the clear command after each question's commands to keep it looking tidy and easy to spot.
+2.	Workspace Validation: Display the current working directory and list all files and directories in that location using long format listing.
+Answer 2: To display my current working directory, I used the pwd (print working directory) command. And to list all files and directories in that location in a detailed format, I used ls -l, which provides the long format listing including permissions, owner, and size.
+Command: pwd and ls -l
+ 
+ 
+3.	Environment Confirmation File: Create a file named user_info.txt and write the line: "Linux user environment verified"
+Answer 3: To create the file and write the specific string to it, I used the echo command combined with output redirection (>). The > symbol redirects the text into the specified file, creating it if it does not exist. This was the easier way. The longer way would've been to first use the touch command to create the file and then use the echo command to write the line into the file. Then I used the cat command to check if it worked. The proper command used was cat user_info.txt. This showed that the line was written successfully, as shown in the screenshot.
+Command: echo "Linux user environment verified" > user_info.txt
+
+ 
+4.	File Integrity Check: Display the number of characters present in user_info.txt.
+Answer 4: I used the Linux command wc -m user_info.txt to display the number of characters present in the user_info.txt file. It was observed that there were 32 characters in the user_info.txt file.
+Command: wc -m user_info.txt
+
+ 
+5.	Learning the Tools: Access the manual page of the mkdir command. Identify one useful option and briefly explain what it does.
+Answer 5: To access the manual page for the mkdir command, I used man mkdir. I used my Kali Linux OS to use this command as the terminal in coursera labs kept showing the message "No manual entry for mkdir" as shown in the first screenshot. You can see the result of the command I ran in my Kali in the next screenshot 
+
+ 
